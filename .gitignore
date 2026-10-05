@@ -1,0 +1,10 @@
+.gradle/
+.gradle-user-home/
+.tools/
+build/
+*.log
+.idea/
+*.iml
+research/
+RESEARCH.md
+VALIDATION.md

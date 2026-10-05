@@ -1,0 +1,30 @@
+# This is an empty-server countdown, never a Thread.sleep duration.
+config-version: 1
+enabled: true
+empty-delay-seconds: 600
+# Countdown uses elapsed monotonic time; this only controls how often it is checked.
+check-interval-ticks: 20
+unloadChunks: true
+# Installed plugin names which prevent idle cleanup; URLs are not supported.
+blacklist: []
+excluded-worlds: []
+chunk-batch-size: 8
+max-tracked-chunks: 4096
+max-pending-tasks: 32
+max-pending-replies: 16
+
+messages:
+  no-permission: '<red>You do not have permission to administer Hibernate.</red>'
+  usage: '<yellow>Usage: /hibernate [status|reload|enable|disable|toggle]</yellow>'
+  busy: '<yellow>A Hibernate configuration operation is already running.</yellow>'
+  unsupported-sender: '<red>Configuration changes require a player or the server console.</red>'
+  reloaded: '<green>Hibernate configuration reloaded. The empty-server countdown has restarted.</green>'
+  enabled: '<green>Hibernate enabled. The empty-server countdown has restarted.</green>'
+  disabled: '<yellow>Hibernate disabled.</yellow>'
+  failed: '<red>Hibernate configuration operation failed. Previous settings remain active; see the server log.</red>'
+  status: '<gray>Hibernate: {state}; tracked chunks: {tracked}; pending cleanup: {pending}.</gray>'
+  state-active: 'active (players online)'
+  state-waiting: 'waiting for the empty-server delay'
+  state-idle: 'idle cleanup (server ticks continue)'
+  state-disabled: 'disabled'
+  state-blocked: 'blocked by a blacklisted plugin'

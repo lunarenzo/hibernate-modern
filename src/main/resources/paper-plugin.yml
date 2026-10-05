@@ -1,0 +1,11 @@
+name: Hibernate
+version: '${version}'
+main: be.wwx.hibernate.HibernatePlugin
+description: Bounded idle chunk cleanup for Paper and Folia
+api-version: '1.20'
+folia-supported: true
+authors: [lunarenzo]
+permissions:
+  hibernate.toggle:
+    description: Allows Hibernate administration and configuration reload
+    default: op
