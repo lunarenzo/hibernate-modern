@@ -1,6 +1,6 @@
 plugins { java }
 
-group = "be.wwx.hibernate"
+group = "lunatech"
 version = "3.0.0"
 val pluginVersion = version.toString()
 
@@ -39,7 +39,7 @@ tasks.jar {
 val verifyLogic by tasks.registering(JavaExec::class) {
     dependsOn(tasks.testClasses)
     classpath = sourceSets.test.get().runtimeClasspath
-    mainClass.set("be.wwx.hibernate.Verification")
+    mainClass.set("lunatech.hibernate.Verification")
     maxHeapSize = "256m"
 }
 // No JUnit/TestNG dependency: even `gradlew test` executes the assertion runner.

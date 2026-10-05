@@ -1,6 +1,6 @@
 name: Hibernate
 version: '${version}'
-main: be.wwx.hibernate.HibernatePlugin
+main: lunatech.hibernate.HibernatePlugin
 description: Bounded idle chunk cleanup for Paper and Folia
 api-version: '1.20'
 folia-supported: true
